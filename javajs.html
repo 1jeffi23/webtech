@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <body>
+      
+        <h1> My first paragraph</h1>
+        <script>document.write(5+6)</script>
+        <button type = "button"   onmouseload="document.write(5+6)">Try it</button>
+
+
+        <button class="btn btn-primary" type="submit" onclick="window.alert(5+6)">Button</button>
+
+
+        <script>console.log(5+6)</script>
+
+             <button type = "button"  onclick="windows.print()">Click </button>
+        
+       
+
+        
+
+        Enter your first value: <input type = "text" id = "first"/><br><br>
+        Enter your second value: <input type = "text" id = "second"/><br><br>
+        <script>
+            function add()
+            {
+
+                     let a,b,sum;
+                           a= document.getElementById("first").value;
+                           b= document.getElementById("second").value;
+                           sum  = Number(a)+Number(b);
+///<!-- document.write("your output is "+ sum) -->
+                             window.alert(sum)
+            }
+
+            
+        </script>
+        <button type = "button" onclick = "add()">Addition</button>
+        
+    </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="custom.css">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <ul class="nav nav-tabs" id="myTabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="personal-tab" data-toggle="tab" href="#personal">Personal Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="address-tab" data-toggle="tab" href="#address">Address Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="education-tab" data-toggle="tab" href="#education">Educational Info</a>
+            </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+            <div class="tab-pane fade show active" id="personal">
+                <!-- Personal Info Form -->
+                <form id="personal-form">
+                    <div class="form-group">
+                        <label for="first-name">First Name:</label>
+                        <input type="text" class="form-control" id="first-name" name="first-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" class="form-control" id="last-name" name="last-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="father-name">Father Name:</label>
+                        <input type="text" class="form-control" id="father-name" name="father-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="cnic">CNIC:</label>
+                        <input type="text" class="form-control" id="cnic" name="cnic">
+                    </div>
+                    <div class="form-group">
+                        <label for="age">Age:</label>
+                        <input type="number" class="form-control" id="age" name="age">
+                    </div>
+                    <div class="form-group">
+                        <label for="nationality">Nationality:</label>
+                        <input type="text" class="form-control" id="nationality" name="nationality">
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-md-2">
+                            <button class="btn btn-primary btn-block next" data-tab="address">Next</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-secondary btn-block back" data-tab="personal">Back</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-success btn-block save" data-tab="save">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="tab-pane fade" id="address">
+                <!-- Address Info Form -->
+                <form id="address-form">
+                    <div class="form-group">
+                        <label for="country">Country:</label>
+                        <input type="text" class="form-control" id="country" name="country">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City:</label>
+                        <input type="text" class="form-control" id="city" name="city">
+                    </div>
+                    <div class="form-group">
+                        <label for="current-address">Current Address:</label>
+                        <input type="text" class="form-control" id="current-address" name="current-address">
+                    </div>
+                    <div class="form-group">
+                        <label for="permanent-address">Permanent Address:</label>
+                        <input type="text" class="form-control" id="permanent-address" name="permanent-address">
+                    </div>
+                    <div class="form-group">
+                        <label for="house-no">House No.:</label>
+                        <input type="text" class="form-control" id="house-no" name="house-no">
+                    </div>
+                    <div class="form-group">
+                        <label for="street-no">Street No.:</label>
+                        <input type="text" class="form-control" id="street-no" name="street-no">
+                    </div>
+                    <div class="form-group">
+                        <label for="postal-code">Postal Code:</label>
+                        <input type="text" class="form-control" id="postal-code" name="postal-code">
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-md-2">
+                            <button class="btn btn-primary btn-block next" data-tab="address">Next</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-secondary btn-block back" data-tab="personal">Back</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-success btn-block save" data-tab="save">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+
+
+            <div class="tab-pane fade" id="education">
+                <!-- Educational Info Form -->
+                <form id="education-form">
+                    <div class="form-group">
+                        <label for="school">School:</label>
+                        <input type="text" class="form-control" id="school" name="school">
+                    </div>
+                    <div class="form-group">
+                        <label for="matric-marks">Marks in Matric:</label>
+                        <input type="number" class="form-control" id="matric-marks" name="matric-marks">
+                    </div>
+                    <div class="form-group">
+                        <label for="matric-out-of">Out of:</label>
+                        <input type="number" class="form-control" id="matric-out-of" name="matric-out-of">
+                    </div>
+                    <div class="form-group">
+                        <label for="intermediate-marks">Marks in Intermediate:</label>
+                        <input type="number" class="form-control" id="intermediate-marks" name="intermediate-marks">
+                    </div>
+                    <div class="form-group">
+                        <label for="intermediate-out-of">Out of:</label>
+                        <input type="number" class="form-control" id="intermediate-out-of" name="intermediate-out-of">
+                    </div>
+                    <div class="form-group">
+                        <label for="university">University Name:</label>
+                        <input type="text" class="form-control" id="university" name="university">
+                    </div>
+                    <div class="form-group">
+                        <label for="campus">Campus:</label>
+                        <input type="text" class="form-control" id="campus" name="campus">
+                    </div>
+                    <div class="form-group">
+                        <label for="current-cgpa">Current CGPA:</label>
+                        <input type="number" class="form-control" id="current-cgpa" name="current-cgpa">
+                    </div>
+                    <div class="form-group">
+                        <label for="cgpa-out-of">Out of:</label>
+                        <input type="number" class="form-control" id="cgpa-out-of" name="cgpa-out-of">
+                    </div>
+                    <div class="row justify-content-end">
+                        <div class="col-md-2">
+                            <button class="btn btn-primary btn-block next" data-tab="address">Next</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-secondary btn-block back" data-tab="personal">Back</button>
+                        </div>
+                        <div class="col-md-2">
+                            <button class="btn btn-success btn-block save" data-tab="save">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+            
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            // Handle the "Next" button click on the Personal Info form
+            $("#personal-form .next").click(function() {
+                // Hide the current tab (Personal Info)
+                $("#personal").removeClass("show active");
+                
+                // Show the Address Info tab
+                $("#address").addClass("show active");
+                
+                // Activate the Address Info tab in the navigation
+                $("#personal-tab").removeClass("active");
+                $("#address-tab").addClass("active");
+            });
+        
+            // Handle the "Back" button click on the Address Info form
+            $("#address-form .back").click(function() {
+                // Hide the current tab (Address Info)
+                $("#address").removeClass("show active");
+                
+                // Show the Personal Info tab
+                $("#personal").addClass("show active");
+                
+                // Activate the Personal Info tab in the navigation
+                $("#address-tab").removeClass("active");
+                $("#personal-tab").addClass("active");
+            });
+        
+            // Handle the "Back" button click on the Educational Info form
+            $("#education-form .back").click(function() {
+                // Hide the current tab (Educational Info)
+                $("#education").removeClass("show active");
+                
+                // Show the Address Info tab
+                $("#address").addClass("show active");
+                
+                // Activate the Address Info tab in the navigation
+                $("#education-tab").removeClass("active");
+                $("#address-tab").addClass("active");
+            });
+        });
+        </script>
+        
+        
+</body>
+</html>
